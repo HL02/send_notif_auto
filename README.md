@@ -3,9 +3,7 @@
 ## Description
 
 EnergyInsight is a data analysis tool designed to visualize and predict global energy consumption trends. It processes historical energy data, identifies patterns, and provides insights to support sustainable energy policies.
-
-[Watch the video](https://github.com/HL02/send_notif_auto/blob/main/demo.MOV)
-
+[![Video Thumbnail](https://github.com/HL02/send_notif_auto/blob/main/demo.mp4))
 ## Features
 
 - Interactive dashboards for energy consumption trends
