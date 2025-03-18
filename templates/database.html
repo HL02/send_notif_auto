@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Enter Data</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <br />
+{% if s==None %}
+    <h3>Please login to see Database <a href="/login">Login</a></h3>
+{% endif %}
+{% if s!=None %}
+   <h3 align="center">Database</h3><br />
+   <form method="POST" action="/delete">
+   <div class="table-responsive">
+    <table class="table table-bordered">
+     <tr>
+      <th>Alert_ID</th>
+      <th>Currency</th>
+      <th>Symbol_Name</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Date</th>
+      <th>Delete</th>
+     </tr>
+     {% for row in content %}
+     <tr>
+      <td>{{row["Alert_ID"]}}</td>
+      <td>{{row["Currency"]}}</td>
+      <td>{{row["Symbol_Name"]}}</td>
+      <td>{{row["Price"]}}</td>
+      <td>{{row["Status"]}}</td>
+      <td>{{row["Date"]}}</td>
+      <td><input type="checkbox" name="mycheckbox" value="{{row["Alert_ID"]}}" /></td>
+     </tr>
+     {% endfor %}
+    </table>
+   </div>
+   <div align="center">
+     {% with messages = get_flashed_messages() %}
+       {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-danger" role="alert">{{ message }}</div>
+      {% endfor %}
+      {% endif %}
+     {% endwith %}
+    <input type="submit" value="Delete All Selected" class="btn btn-primary">  
+   </div>
+      <h3><a href="/inputdata">Enter Data</a></h3>
+      <h3><a href="/exit">Exit</a></h3>
+     <h3><a href="{{url_for('.checkPrice')}}">Check Price</a>
+{% endif %}
+   </form>
+{% if admin=='hien.luu2304' and password=='thuhienluuthi' %}
+<h5> You can see Login Database: <a href="/logindatabase">View Login Database</a></h5>
+{% endif %}
+ </body>
+</html>

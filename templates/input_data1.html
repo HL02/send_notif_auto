@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Enter Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Currency" name="currency" value="{{
+          request.form.currency }}">
+         <input type="text" placeholder="Symbol Name" name="symbol_name" value="{{
+          request.form.symbol_name }}">
+          <input type="float" placeholder="Price" name="price" value="{{
+          request.form.price }}">
+        <input class="btn btn-default" type="submit" value="Submit">
+        <h3><a href="/database">View Database</a></h3>
+        <h3><a href="/checkPrice">Check Price</a></h3>
+      <h3><a href="/exit">Exit</a></h3>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  
+<head>
+    
+<title>Homepage</title>
+    
+<h3>Home</h3>
+      
+<h3><a href="/inputdata">Enter Data</a></h3>
+  
+<h3><a href="/login">Login</a></h3>
+  
+<h3><a href="/signup">Sign up</a></h3> 
+  
+</head>
+
+</html>
