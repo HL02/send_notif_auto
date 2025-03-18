@@ -1,21 +1,13 @@
-# EnergyInsight
-
+# Cryptocurrency Price Notification App
 ## Description
 
-EnergyInsight is a data analysis tool designed to visualize and predict global energy consumption trends. It processes historical energy data, identifies patterns, and provides insights to support sustainable energy policies
+This is a web app designed to track and send notifications about the price of cryptocurrency automatically if it approachs to the desired price. 
 
 https://github.com/user-attachments/assets/1c4b1baa-e928-4f83-b46c-66b522019dde
 
-## Features
-
-- Interactive dashboards for energy consumption trends
-- Predictive analytics using machine learning models
-- Correlation analysis between energy use and economic factors
-- Exportable reports in CSV and PDF formats
-
 ## Usage
 
-1. Upload your dataset (CSV format).
-2. Choose analysis parameters.
-3. View interactive visualizations.
-4. Generate reports.
+1. Sign Up an account.
+2. Enter the cryptocurrencies you want to track and their desired prices.
+3. Click View Database to review your data.
+4. Click Check Price and wait to receive notifications.
