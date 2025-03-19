@@ -20,7 +20,7 @@ app.config['SESSION_PERMANENT']=False
 app.config['SESSION_TYPE']='filesystem'
 Session(app)
 app.secret_key='thuhienluuthi'
-webhook_url='https://discord.com/api/webhooks/1351368722874630246/ORSrZrhP1u-_XbkHEDpqUWc7EE05Fvgtz9nKSf-3nX3jjHZ0MkdtslQtPRNT6bdGbPg3'
+webhook_url=''
 
 def createTable():
     conn=sqlite3.connect('ResultDB.db')
